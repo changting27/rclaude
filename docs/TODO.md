@@ -1,47 +1,41 @@
 # rclaude TODO
 
-> 待实现功能，按优先级排序
+> Pending features, ordered by priority
 
-## P1: 待实现命令
+## P1: Missing Commands
 
-| 优先级 | 命令 | 说明 |
-|--------|------|------|
-| 中 | extra-usage | 额外用量查看 |
-| 中 | rate-limit-options | 限流选项配置 |
-| 中 | oauth-refresh | OAuth token 刷新 |
-| 中 | reload-plugins | 运行时插件重载 |
-| 低 | bridge | 远程控制 (JWT+WebSocket) |
-| 低 | voice | 语音输入模式 |
-| 低 | teleport | 环境迁移 |
-| 低 | remote-setup / remote-env | 远程环境配置 |
-| 低 | thinkback / thinkback-play | 思考过程回放 |
-| 低 | assistant | 助手模式 |
-| 低 | passes | 多轮自动执行 |
-| 低 | break-cache | 缓存失效控制 |
+| Priority | Command | Description |
+|----------|---------|-------------|
+| Medium | extra-usage | Extended usage analytics |
+| Medium | rate-limit-options | Rate limit configuration |
+| Medium | reload-plugins | Runtime plugin reload |
+| Low | bridge | Remote control (JWT+WebSocket) |
+| Low | voice | Voice input mode |
+| Low | teleport | Environment migration |
+| Low | remote-setup / remote-env | Remote environment setup |
+| Low | thinkback / thinkback-play | Thinking process replay |
+| Low | assistant | Assistant mode |
+| Low | passes | Multi-pass auto execution |
+| Low | break-cache | Cache invalidation control |
 
-## P2: 生态扩展
+## P2: Ecosystem
 
-### 插件 DXT 运行时
-- [ ] DXT 包解压 + manifest 验证
-- [ ] 插件工具注册到 Tool 系统
-- [ ] 插件 commands/agents/skills/hooks 组件加载
-- [ ] 插件 userConfig 配置流程
+### Plugin DXT Runtime
+- [x] DXT manifest parsing and discovery
+- [ ] Plugin tool registration into Tool system
+- [ ] Plugin commands/agents/skills/hooks component loading
+- [ ] Plugin userConfig configuration flow
 
-### Git 命令深化
-- [ ] AI commit message 生成
-- [ ] 代码审查增强
-- [ ] PR 创建流程
+### TUI Enhancements
+- [x] Basic markdown rendering (headers, code blocks, bold/italic)
+- [ ] Syntax highlighting (tree-sitter based)
+- [ ] Diff visualization
+- [ ] File path autocomplete
 
-### TUI 增强
-- [ ] Markdown 终端渲染 + 语法高亮
-- [ ] Diff 可视化
-- [ ] 文件路径自动补全
-- [ ] 主题系统
+## P3: Advanced Features
 
-## P3: 高级功能
-
-- [ ] 多 agent 协调 (Swarm)
-- [ ] PowerShell 工具完整实现 (Windows)
-- [ ] 语音 / IDE 集成
-- [ ] 远程控制 (Bridge)
-- [ ] Coordinator 模式
+- [ ] Multi-agent coordination (Swarm)
+- [ ] Voice input mode
+- [ ] IDE integration (VS Code / JetBrains plugin protocol)
+- [ ] Remote control (Bridge)
+- [ ] Coordinator mode
