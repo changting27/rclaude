@@ -1,6 +1,6 @@
 # 🦀 rclaude
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/Rust-1.75%2B-orange.svg)](https://www.rust-lang.org/)
 [![Tests](https://img.shields.io/badge/tests-452%20passing-green.svg)]()
 
@@ -208,4 +208,4 @@ Built from publicly available resources:
 
 ## License
 
-[MIT](LICENSE)
+[Apache 2.0](LICENSE)
