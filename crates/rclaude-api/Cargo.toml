@@ -1,0 +1,25 @@
+[package]
+name = "rclaude-api"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Anthropic API client with streaming support"
+
+[dependencies]
+rclaude-core.workspace = true
+reqwest.workspace = true
+reqwest-eventsource.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+futures.workspace = true
+url.workspace = true
+base64.workspace = true
+async-trait.workspace = true
+rand.workspace = true
+sha2.workspace = true
+hmac.workspace = true
+hex.workspace = true
+chrono.workspace = true

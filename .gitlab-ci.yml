@@ -1,0 +1,41 @@
+stages:
+  - check
+  - test
+  - build
+
+variables:
+  CARGO_HOME: ${CI_PROJECT_DIR}/.cargo
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .cargo/registry
+    - .cargo/git
+    - target/
+
+check:
+  stage: check
+  image: rust:1.75
+  script:
+    - rustup component add rustfmt clippy
+    - cargo fmt --check
+    - cargo clippy --workspace -- -D warnings
+
+test:
+  stage: test
+  image: rust:1.75
+  script:
+    - cargo test --workspace
+
+build:
+  stage: build
+  image: rust:1.75
+  script:
+    - cargo build --release
+  artifacts:
+    paths:
+      - target/release/rclaude
+    expire_in: 7 days
+  only:
+    - tags
+    - main

@@ -1,0 +1,23 @@
+[package]
+name = "rclaude-commands"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Slash command implementations"
+
+[dependencies]
+rclaude-core.workspace = true
+rclaude-utils.workspace = true
+async-trait.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+colored.workspace = true
+rclaude-mcp.workspace = true
+rclaude-services.workspace = true
+dirs.workspace = true
+reqwest.workspace = true
+chrono.workspace = true
+open = "5"

@@ -1,0 +1,27 @@
+[package]
+name = "rclaude-services"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "External service integrations (OAuth, analytics, LSP)"
+
+[dependencies]
+rclaude-core.workspace = true
+rclaude-utils.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+chrono.workspace = true
+reqwest.workspace = true
+uuid.workspace = true
+sha2.workspace = true
+base64.workspace = true
+rand.workspace = true
+dirs.workspace = true
+regex.workspace = true
+urlencoding = "2"
+
+[dev-dependencies]
+tempfile = "3"

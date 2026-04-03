@@ -1,0 +1,8 @@
+/target
+.claude-flow/
+.claude/
+.swarm/
+.mcp.json
+*.db
+.kiro/
+CLAUDE.md
